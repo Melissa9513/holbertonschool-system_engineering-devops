@@ -1,19 +1,19 @@
-         User
-           |
-     www.foobar.com
-           |
-      HAProxy LB
-        /    \
-       /      \
-      v        v
+                User
+                  |
+           www.foobar.com
+                  |
+             HAProxy LB
+              /      \
+             /        \
+            v          v
 
-+-----------+  +-----------+
-| Server 1  |  | Server 2  |
-|-----------|  |-----------|
-| Nginx     |  | Nginx     |
-| App       |  | App       |
-| Files     |  | Files     |
-| MySQL     |  | MySQL     |
-+-----------+  +-----------+
++----------------+  +----------------+
+|   Server 1     |  |   Server 2     |
+|----------------|  |----------------|
+| Nginx          |  | Nginx          |
+| App Server     |  | App Server     |
+| App Files      |  | App Files      |
+| MySQL Primary  |  | MySQL Replica  |
++----------------+  +----------------+
 
-      Primary -----> Replica
+          Primary -----> Replica
