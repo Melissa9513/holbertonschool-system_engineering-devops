@@ -1,0 +1,25 @@
+             User
+              |
+            HTTPS
+              |
+        SSL Certificate
+              |
+         HAProxy LB
+         [Firewall]
+              |
+        /-----------\
+       /             \
+
++---------------+  +---------------+
+| Server 1      |  | Server 2      |
+| Firewall      |  | Firewall      |
+| Monitoring    |  | Monitoring    |
+| Nginx         |  | Nginx         |
+| App Server    |  | App Server    |
+| MySQL Primary |  | MySQL Replica |
++---------------+  +---------------+
+
+          |
+          v
+
+ Monitoring Service
