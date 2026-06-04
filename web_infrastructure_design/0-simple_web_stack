@@ -1,0 +1,24 @@
+  User
+           |
+     www.foobar.com
+           |
+      A Record
+           |
+        8.8.8.8
+           |
+           v
+
++------------------+
+|      Server      |
+|------------------|
+| Nginx            |
+| Web Server       |
+|                  |
+| Application      |
+| Server           |
+|                  |
+| Application      |
+| Files            |
+|                  |
+| MySQL Database   |
++------------------+
