@@ -12,13 +12,9 @@
 |      Server      |
 |------------------|
 | Nginx            |
-| Web Server       |
-|                  |
 | Application      |
 | Server           |
-|                  |
 | Application      |
 | Files            |
-|                  |
 | MySQL Database   |
 +------------------+
